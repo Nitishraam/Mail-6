@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service2.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+       <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="./home2.html"
+                  >Home</a>
+                  <i
+                    onclick="menu2.hidden^=1"
+                    class="fa-solid fa-caret-down"
+                  ></i
+                >
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a href="./about2.html">About</a></li>
+              <li><a style="color: #2b16ec"  href="./service2.html">Service</a></li>
+              <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+    
+        </div>
+         <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+      </div>
+    </div>
+    <nav> 
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about2.html">About</a></li>
+            <li><a style="color: #2b16ec"   href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="../Images/at8.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>SERVICE</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Service</span></span>
+        </p>
+      </div>
+    </div>
+
+
+<!-- SERVICES PAGE START -->
+<main class="services-page">
+
+  <!-- HERO -->
+  <section class="svc-hero">
+    <div class="home-container">
+      <div class="svc-hero-card">
+        <div class="svc-hero-left">
+          <h1 data-aos="fade-up">Smart email services that scale with your business</h1>
+          <p data-aos="fade-up" class="svc-lead">From campaign creation to automation and deliverability — we offer managed services and self-serve tools to help teams send smarter, faster and more reliably.</p>
+
+          <div data-aos="fade-up" class="svc-hero-ctas">
+            <a class="cta-btn" href="./error.html">Get started free</a>
+            <a class="ghost-btn" href="./error.html">Request a demo</a>
+          </div>
+
+          <ul data-aos="fade-up" class="svc-trust">
+            <li>Personal onboarding</li>
+            <li>SMTP & deliverability help</li>
+            <li>Custom templates</li>
+          </ul>
+        </div>
+
+        <div class="svc-hero-right" aria-hidden="true">
+          <div data-aos="zoom-out" class="svc-mock">
+            <img src="../Images/s1.webp" alt="service preview">
+            <div class="svc-glow"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES GRID -->
+  <section class="svc-services">
+    <div class="home-container">
+      <h2 data-aos="fade-up" class="section-head">Our services</h2>
+      <p data-aos="fade-up" class="section-sub">Tailored offerings to fit teams of every size — pick a plan or mix & match services.</p>
+
+      <div class="svc-grid">
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">✉️</div>
+          <h3>Campaign Management</h3>
+          <p>We plan, design, and send your campaigns — segmentation, templates, and A/B testing handled by experts.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">⚙️</div>
+          <h3>Automation & Workflows</h3>
+          <p>Customer journeys, triggered flows and cart recovery sequences that increase conversion.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">🛡️</div>
+          <h3>Deliverability Consulting</h3>
+          <p>IP warmup, DKIM/SPF setup and deliverability audits to increase inbox placement.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">🎨</div>
+          <h3>Custom Templates</h3>
+          <p>On-brand, responsive templates and modular blocks to speed up production.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">📊</div>
+          <h3>Reporting & Analytics</h3>
+          <p>Custom dashboards, revenue attribution and cohort analysis to optimize ROI.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="svc-card">
+          <div class="svc-icon">🤝</div>
+          <h3>Managed Partner</h3>
+          <p>Full-service partnership for teams that need a dedicated marketing & deliverability partner.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFITS -->
+  <section class="svc-benefits">
+    <div class="home-container">
+      <div class="benefits-grid">
+        <div data-aos="zoom-in" class="benefit">
+          <div class="b-ico">⚡</div>
+          <h4>Speed to market</h4>
+          <p>Launch campaigns faster with templates, checked workflows and a dedicated team.</p>
+        </div>
+
+        <div data-aos="zoom-in" class="benefit">
+          <div class="b-ico">🔒</div>
+          <h4>Security & compliance</h4>
+          <p>Privacy-first defaults, secure sending, and guidance on consent and GDPR-safe practices.</p>
+        </div>
+
+        <div data-aos="zoom-in" class="benefit">
+          <div class="b-ico">📈</div>
+          <h4>Growth focus</h4>
+          <p>Data-driven recommendations focused on engagement, LTV and revenue uplift.</p>
+        </div>
+
+        <div  data-aos="zoom-in" class="benefit">
+          <div class="b-ico">🤝</div>
+          <h4>Human support</h4>
+          <p>Real specialists for onboarding, strategy, and emergency deliverability support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES / CTA -->
+  <section class="svc-packages">
+    <div class="home-container">
+      <h2  data-aos="fade-up" class="section-head">Packages</h2>
+      <p  data-aos="fade-up" class="section-sub">Simple packages to get you started — custom quotes available for enterprise & managed plans.</p>
+
+      <div class="packages-row">
+        <div data-aos="zoom-out" class="pkg-card">
+          <h3>Starter</h3>
+          <div class="pkg-price">$99<span class="per">/mo</span></div>
+          <ul class="pkg-features">
+            <li>Campaign setup (monthly)</li>
+            <li>Template library</li>
+            <li>Email support</li>
+          </ul>
+          <a class="cta-btn" href="./error.html">Choose Starter</a>
+        </div>
+
+        <div data-aos="zoom-out" class="pkg-card featured">
+          <!-- <div class="ribbon">Popular</div> -->
+          <h3>Growth</h3>
+          <div class="pkg-price">$499<span class="per">/mo</span></div>
+          <ul class="pkg-features">
+            <li>Weekly campaign management</li>
+            <li>Automation & reporting</li>
+            <li>Deliverability audit</li>
+          </ul>
+          <a class="cta-btn" href="./error.html">Choose Growth</a>
+        </div>
+
+        <div  data-aos="zoom-out" class="pkg-card">
+          <h3>Enterprise</h3>
+          <div class="pkg-price">Custom</div>
+          <ul class="pkg-features">
+            <li>Dedicated team</li>
+            <li>SLAs & integrations</li>
+            <li>On-site kickoff</li>
+          </ul>
+          <a class="ghost-btn" href="./error.html">Contact sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + CONTACT -->
+  <section class="svc-faq">
+    <div class="home-container">
+      <div class="faq-cta">
+        <div class="faq-left">
+          <h2  data-aos="fade-up">Questions about services?</h2>
+          <p  data-aos="fade-up" class="section-sub">Check these quick answers or contact our sales team for a custom quote.</p>
+
+          <div data-aos="zoom-in" class="faq-list">
+            <details><summary>How does onboarding work?</summary><div class="faq-body">We start with a discovery call, followed by an implementation plan and a kickoff workshop.</div></details>
+            <details><summary>Can you handle large sending volumes?</summary><div class="faq-body">Yes — we support high-volume sending with dedicated IPs, warmup and deliverability monitoring.</div></details>
+            <details><summary>Do you provide templates that match our brand?</summary><div class="faq-body">Absolutely. We design and build templates that match your visual identity and conversion goals.</div></details>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- SERVICES PAGE END -->
+
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- LEFT: About + newsletter -->
+      <div class="col about">
+        <h3>About</h3>
+        <p>
+          There are many variations of passages of Lorem Ip available,
+          but the majority have
+        </p>
+
+        <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+       <div class="ft-social">
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+      </div>
+
+  
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="dot">🌐</span>
+            <div>
+              <div class="muted">stackly@gmail.com</div>
+              <div class="muted small">www.stackly.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="dot">📍</span>
+            <div>
+              <div class="muted">Chinna Thiruppathi,Salem</div>
+              <div class="muted small">Tamil nadu,India</div>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="emergency">
+            <div class="phone-icon">📞</div>
+            <div class="emerg-text">
+              <div class="muted small">Emergency call</div>
+              <div class="phone-number">+91 78912 43598</div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+         <!-- RIGHT: Explore links -->
+      <div class="col explore">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./service2.html">Service</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+        </ul>
+      </div>
+      </div>
+
+     
+
+    </div>
+     <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+    <div class="footer-bottom">
+      <p>© All Copyright 2024 </p>
+    </div>
+  </footer>
+
+
+
+    
+        <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./about2.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+      <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a href="./home2.html"
+                  >Home</a>
+                  <i
+                    onclick="menu2.hidden^=1"
+                    class="fa-solid fa-caret-down"
+                  ></i
+                >
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a style="color: #2b16ec"  href="./about2.html">About</a></li>
+              <li><a href="./service2.html">Service</a></li>
+              <li><a href="./blog2.html">Blogs</a></li>
+              <li><a href="./contact2.html">Contact</a></li>
+              <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+    
+        </div>
+         <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+      </div>
+    </div>
+    <nav> 
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a style="color: #2b16ec"  href="./about2.html">About</a></li>
+            <li><a href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="../Images/at7.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>ABOUT</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>About</span></span>
+        </p>
+      </div>
+    </div>
+
+
+    <!-- ATTRACTIVE ABOUT — START -->
+<main class="about-beauty">
+
+  <!-- 1) HERO — bold statement + decorative shapes -->
+  <section class="ab-hero">
+    <div class="home-container">
+      <div class="hero-card">
+        <div class="hero-left">
+          <h1 data-aos="fade-up">We craft emails people actually open</h1>
+          <p data-aos="fade-up" class="hero-lead">Design-led templates, powerful automations, and data that helps you grow — all in one delightful platform built for creators and teams.</p>
+          <div data-aos="fade-up" class="hero-cta-row">
+            <a class="cta-btn" href="./error.html">Start Free</a>
+            <a class="ghost-btn" href="./error.html">See Pricing</a>
+          </div>
+
+          <ul data-aos="fade-up" class="hero-trust">
+            <li>Trusted by 30,000+ teams</li>
+            <li>99.9% deliverability</li>
+            <li>24/7 support</li>
+          </ul>
+        </div>
+
+        <div data-aos="zoom-in" class="hero-right" aria-hidden="true">
+          <div class="device-mock">
+            <img src="../Images/ha1.webp" alt="product preview">
+            <div class="glow"></div>
+            <!-- <div class="badge-floating">Featured in Product Hunt</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2) IMPACT STATS — large numbers with microcopy -->
+  <section class="ab-stats">
+    <div class="home-container">
+      <div class="stats-grid">
+        <div data-aos="zoom-out" class="stat">
+          <div class="stat-num">30k+</div>
+          <div class="stat-label">Active teams</div>
+          <div class="stat-note">Scale from 1k → 100k subscribers</div>
+        </div>
+
+        <div data-aos="zoom-out" class="stat">
+          <div class="stat-num">95%</div>
+          <div class="stat-label">Avg open rate</div>
+          <div class="stat-note">Across our top performing templates</div>
+        </div>
+
+        <div data-aos="zoom-out" class="stat">
+          <div class="stat-num">24/7</div>
+          <div class="stat-label">Support</div>
+          <div class="stat-note">Fast responses from real humans</div>
+        </div>
+
+        <div data-aos="zoom-out" class="stat">
+          <div class="stat-num">99.9%</div>
+          <div class="stat-label">Deliverability</div>
+          <div class="stat-note">Optimized sending & warmup</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) FEATURE HIGHLIGHTS — alternating cards with icons -->
+  <section class="ab-features">
+    <div class="home-container">
+      <h2 data-aos="fade-up" class="section-head">What we build</h2>
+      <p  data-aos="fade-up" class="section-sub">Purposeful features that help you convert, retain and personalize at scale.</p>
+
+      <div class="features-grid">
+        <article data-aos="zoom-in" class="fcard">
+          <div class="f-ico">✉️</div>
+          <h3>Email Editor</h3>
+          <p>Pixel-perfect templates, reusable blocks and mobile previews for confident sending.</p>
+          <a class="link-more" href="../Pages/error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="fcard">
+          <div class="f-ico">⚙️</div>
+          <h3>Automations</h3>
+          <p>Build multi-step journeys that trigger on events, purchases or custom rules.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="fcard">
+          <div class="f-ico">📈</div>
+          <h3>Analytics</h3>
+          <p>Deep reporting on opens, clicks, revenue and cohort performance.</p>
+          <a class="link-more" href="error.html">Learn more →</a>
+        </article>
+
+        <article data-aos="zoom-in" class="fcard">
+          <div class="f-ico">🔗</div>
+          <h3>Integrations</h3>
+          <p>Connect to your CRM, eCommerce platform or data warehouse in minutes.</p>
+          <a class="link-more" href="./error.html">Learn more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) TEAM & CULTURE — attractive profile cards with color accents -->
+  <section class="ab-team">
+    <div class="home-container">
+      <h2 data-aos="fade-up" class="section-head">Meet the team</h2>
+      <p  data-aos="fade-up" class="section-sub">A small team of product people, engineers and marketers who love email.</p>
+
+      <div class="team-row">
+        <div data-aos="zoom-in" class="member">
+          <img src="../Images/ha2.webp" alt="Member">
+          <h4>Jane Doe</h4>
+          <div class="role">CEO & Founder</div>
+          <p class="m-bio">Built the first templates and grew the early community. Loves clear onboarding and copy that converts.</p>
+        </div>
+
+        <div data-aos="zoom-in" class="member highlight">
+          <img src="../Images/ha3.webp" alt="Member">
+          <h4>Ravi Kumar</h4>
+          <div class="role">CTO</div>
+          <p class="m-bio">Architect of our sending platform and warmup system. Passionate about reliability and scale.</p>
+        </div>
+
+        <div data-aos="zoom-in" class="member">
+          <img src="../Images/ha4.webp" alt="Member">
+          <h4>Lina Park</h4>
+          <div class="role">Head of Design</div>
+          <p class="m-bio">Designs templates and components that are both beautiful and effective.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5) MISSION CTA + STORY BLOCK — layered card + timeline highlight -->
+  <section class="ab-mission">
+    <div class="home-container">
+      <div class="mission-wrap">
+        <div class="mission-left">
+          <h2 data-aos="fade-up">Our mission: Better inbox experiences</h2>
+          <p data-aos="fade-up">We believe email should be helpful, relevant and respectful. Our tools make it easier to send personal messages at scale without compromising privacy or deliverability.</p>
+          <ul data-aos="fade-up" class="mission-list">
+            <li>Privacy-first defaults</li>
+            <li>Templates that convert</li>
+            <li>Send with confidence</li>
+          </ul>
+          <a  data-aos="fade-up" class="cta-btn" href="./error.html">Get started — it's free</a>
+        </div>
+
+        <div class="mission-right">
+          <div data-aos="zoom-in" class="story-card">
+            <div class="year">2018</div>
+            <h4>Humble beginnings</h4>
+            <p>Started as a designer's hack to personalize follow-ups — quickly became a product used by small teams.</p>
+          </div>
+
+          <div data-aos="zoom-in" class="story-card">
+            <div class="year">2021</div>
+            <h4>Automations launched</h4>
+            <p>Introduced multi-step flows and A/B testing to help teams optimize messaging.</p>
+          </div>
+
+          <div data-aos="zoom-in" class="story-card">
+            <div class="year">2024</div>
+            <h4>Trusted by thousands</h4>
+            <p>Grew product and infrastructure to support global delivery and enterprise needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+<!-- ATTRACTIVE ABOUT — END -->
+
+
+
+
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- LEFT: About + newsletter -->
+      <div class="col about">
+        <h3>About</h3>
+        <p>
+          There are many variations of passages of Lorem Ip available,
+          but the majority have
+        </p>
+
+        <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+       <div class="ft-social">
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+      </div>
+
+  
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="dot">🌐</span>
+            <div>
+              <div class="muted">stackly@gmail.com</div>
+              <div class="muted small">www.stackly.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="dot">📍</span>
+            <div>
+              <div class="muted">Chinna Thiruppathi,Salem</div>
+              <div class="muted small">Tamil nadu,India</div>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="emergency">
+            <div class="phone-icon">📞</div>
+            <div class="emerg-text">
+              <div class="muted small">Emergency call</div>
+              <div class="phone-number">+91 78912 43598</div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+         <!-- RIGHT: Explore links -->
+      <div class="col explore">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./service2.html">Service</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+        </ul>
+      </div>
+      </div>
+
+     
+
+    </div>
+     <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+    <div class="footer-bottom">
+      <p>© All Copyright 2024 </p>
+    </div>
+  </footer>
+
+
+    
+        <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

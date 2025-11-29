@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./dashboard.css">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<body>
+     <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a style="color: #f27868" href="../index.html"
+                  >Home</a>
+                  <i
+                    onclick="menu2.hidden^=1"
+                    class="fa-solid fa-caret-down"
+                  ></i
+                >
+                <div id="menu2" hidden>
+                  <a href="./home2.html">Home2</a>
+                </div>
+              </li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./service.html">Service</a></li>
+              <li><a href="./blog.html">Blogs</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li><a href="./dashboard.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./index.html" style="display: flex; align-items: center">
+            <img src="../Images/logo.webp" alt="" />
+          </a>
+    
+        </div>
+         <a class="login2" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+      </div>
+    </div>
+    <nav> 
+      <div class="main-menu">
+        <a href="../index.html" style="display: flex; align-items: center">
+          <img src="../Images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a style="color: #f27868" href="../index.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="./home2.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home2</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blogs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+          <a class="login" href="./login.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="../Images/at6.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>DASHBOARD</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Dashboard</span></span>
+        </p>
+      </div>
+    </div>
+
+     <main class="dashboard-wrap">
+
+    <!-- Top stats -->
+    <section data-aos="fade-up" class="top-stats" aria-label="Top stats">
+      <div class="stat-card">
+        <div class="stat-label">Today Revenue</div>
+        <div class="stat-date">06.25.2025</div>
+        <div class="stat-value">$ <span id="statToday">1,800</span></div>
+      </div>
+
+      <div data-aos="fade-up" class="stat-card">
+        <div class="stat-label">Yesterday Revenue</div>
+        <div class="stat-date">06.24.2025</div>
+        <div class="stat-value">$ <span id="statYesterday">1,700</span></div>
+      </div>
+
+      <div data-aos="fade-up" class="stat-card">
+        <div class="stat-label">This Month Revenue</div>
+        <div class="stat-date">In June</div>
+        <div class="stat-value">$ <span id="statMonth">22,500.50</span></div>
+      </div>
+
+      <div data-aos="fade-up" class="stat-card">
+        <div class="stat-label">Total Subscribers</div>
+        <div class="stat-date">All time</div>
+        <div class="stat-value"><span id="statSubs">9,999</span> <span class="muted-plus" id="statSubsDelta">+7.5%</span></div>
+      </div>
+    </section>
+
+    <!-- Main area -->
+    <section class="main-area" aria-label="Main dashboard area">
+      <div data-aos="zoom-out" class="left-col">
+
+        <!-- Campaign Performance -->
+        <div class="panel" aria-labelledby="campPerf">
+          <div class="panel-head">
+            <div class="title-row">
+              <h3 id="campPerf">Campaign Performance (Opens)</h3>
+            </div>
+            <div class="range">From 06/01/2025 To 06/25/2025</div>
+          </div>
+
+          <div class="chart-wrap">
+            <canvas id="mainBarChart" role="img" aria-label="Campaign opens bar chart"></canvas>
+          </div>
+        </div>
+
+        <!-- Recent campaigns -->
+        <div data-aos="fade-up" class="panel panel-table" aria-labelledby="recentCampaigns">
+          <div class="panel-head small">
+            <h3 id="recentCampaigns">Recent Campaigns</h3>
+          </div>
+
+          <div class="control-row">
+            <input id="tableSearch" placeholder="Search campaigns" aria-label="Search campaigns" />
+            <button id="resetSearch" class="btn">Reset</button>
+          </div>
+
+          <div class="table-wrap" id="tableWrap">
+            <table id="campaignTable" aria-describedby="recentCampaigns">
+              <thead>
+                <tr>
+                  <th>#</th><th>Campaign ID</th><th>Campaign</th><th>Recipients</th><th>Status</th><th>Open Rate</th>
+                </tr>
+              </thead>
+              <tbody id="campaignTbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <aside data-aos="zoom-out" class="right-col" aria-label="Widgets">
+        <div class="small-card">
+          <div class="small-head">Total Revenue</div>
+          <div class="small-value" id="totalRevenue">$55,000</div>
+          <div class="small-sub" id="totalRevenueDelta">+5.65%</div>
+        </div>
+
+        <div class="small-card">
+          <div class="small-head">Total Subscribers</div>
+          <div class="small-value" id="totalSubs">9,999</div>
+          <div class="small-sub" id="subsDelta">+7.5%</div>
+        </div>
+
+        <div class="small-card donut-card" aria-hidden="false">
+          <div class="small-head">Campaign Type</div>
+          <div class="donut-canvas-wrap"><canvas id="donutChart" role="img" aria-label="Campaign type distribution"></canvas></div>
+          <ul class="donut-legend" id="donutLegend"></ul>
+        </div>
+      </aside>
+    </section>
+  </main>
+  <script>
+    /* script.js
+   - Draws bar + doughnut via Chart.js
+   - Adds dataset pill next to panel title
+   - Populates table and search
+   - Waits for canvas size before drawing to avoid blank charts
+*/
+
+(function() {
+
+  /* --- sample data (replace with API values) --- */
+  const barData = [
+    { label: "5", value: 1000 },
+    { label: "8", value: 1200 },
+    { label: "14", value: 1500 },
+    { label: "18", value: 1600 },
+    { label: "22", value: 1700 },
+    { label: "25", value: 1800 }
+  ];
+
+  const donutData = [
+    { name: "Newsletters", percent: 40, color: "#7c3aed" },
+    { name: "Promotions", percent: 30, color: "#34d399" },
+    { name: "Automations", percent: 30, color: "#c084fc" }
+  ];
+
+  const campaigns = [
+    { id: "CAMP-786PSG", name: "Welcome Series", recipients: 2450, status: "Draft", open: "—" },
+    { id: "CAMP-867MDK", name: "Holiday Sale", recipients: 3100, status: "Scheduled", open: "—" },
+    { id: "CAMP-367HGY", name: "Weekly Newsletter", recipients: 1800, status: "Sent", open: "62%" },
+    { id: "CAMP-574RNY", name: "Feature Launch", recipients: 1200, status: "Sent", open: "48%" },
+    { id: "CAMP-925MGD", name: "Re-engagement", recipients: 980, status: "Completed", open: "74%" }
+  ];
+
+  /* --- helpers --- */
+  function waitForSize(el, timeout = 2500) {
+    return new Promise((resolve, reject) => {
+      const start = performance.now();
+      function check() {
+        const r = el.getBoundingClientRect();
+        if (r.width > 0 && r.height > 0) return resolve(r);
+        if (performance.now() - start > timeout) return reject(new Error('no size'));
+        requestAnimationFrame(check);
+      }
+      check();
+    });
+  }
+
+  /* --- Bar chart --- */
+  const barCanvas = document.getElementById('mainBarChart');
+  let barChart = null;
+
+  function createBarGradient(ctx, chartArea) {
+    const g = ctx.createLinearGradient(0, chartArea.top, 0, chartArea.bottom);
+    g.addColorStop(0, '#f6d46a');
+    g.addColorStop(1, '#fef7d8');
+    return g;
+  }
+
+  async function drawBarChart() {
+    try {
+      await waitForSize(barCanvas, 3000);
+    } catch (err) {
+      console.warn('bar canvas size timeout — continuing anyway');
+    }
+
+    const labels = barData.map(d => d.label);
+    const values = barData.map(d => d.value);
+
+    if (barChart) { barChart.destroy(); barChart = null; }
+
+    const ctx = barCanvas.getContext('2d');
+    barChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Opens',
+          data: values,
+          backgroundColor: (ctx)=> {
+            const chart = ctx.chart;
+            const {ctx: c, chartArea} = chart;
+            if (!chartArea) return '#f6d46a';
+            return createBarGradient(c, chartArea);
+          },
+          borderRadius: 10,
+          barPercentage: 0.6
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: { duration: 700 },
+        plugins: {
+          legend: {
+            display: true,
+            position: 'top',
+            labels: { color: '#111827', boxWidth: 12, font: { weight: '700' } }
+          },
+          tooltip: {
+            callbacks: {
+              label: ctx => ctx.parsed.y.toLocaleString() + ' opens'
+            }
+          }
+        },
+        scales: {
+          x: { grid: { display: false }, ticks: { color: '#9aa0b5' } },
+          y: { beginAtZero: true, ticks: { color: '#9aa0b5', callback: v => v.toLocaleString() }, grid: { color: 'rgba(30,44,80,0.03)' } }
+        }
+      }
+    });
+
+    // dataset pill next to title
+    const titleEl = document.getElementById('campPerf');
+    if (titleEl) {
+      const parent = titleEl.parentElement;
+      let left = parent.querySelector('.title-row');
+      if (!left) {
+        left = document.createElement('div');
+        left.className = 'title-row';
+        left.appendChild(titleEl);
+        parent.insertBefore(left, parent.firstChild);
+      }
+      const existing = parent.querySelector('.data-pill');
+      if (existing) existing.remove();
+      const pill = document.createElement('span');
+      pill.className = 'data-pill';
+      pill.textContent = barChart.data.datasets[0].label || 'Data';
+      parent.appendChild(pill);
+    }
+  }
+
+  /* --- Doughnut --- */
+  const donutCanvas = document.getElementById('donutChart');
+  let donutChart = null;
+
+  async function drawDonut() {
+    try {
+      await waitForSize(donutCanvas, 1500);
+    } catch (err) { /* ignore */ }
+
+    const ctx = donutCanvas.getContext('2d');
+    const labels = donutData.map(d => d.name);
+    const data = donutData.map(d => d.percent);
+    const colors = donutData.map(d => d.color);
+
+    if (donutChart) { donutChart.destroy(); donutChart = null; }
+
+    donutChart = new Chart(ctx, {
+      type: 'doughnut',
+      data: { labels, datasets: [{ data, backgroundColor: colors, hoverOffset: 6 }] },
+      options: { responsive:true, maintainAspectRatio:false, plugins: { legend: { display: false } }, cutout: '60%' }
+    });
+
+    // legend
+    const legend = document.getElementById('donutLegend');
+    legend.innerHTML = '';
+    donutData.forEach(d => {
+      const li = document.createElement('li');
+      li.innerHTML = `<span class="dot" style="background:${d.color}"></span> ${d.percent}% ${d.name}`;
+      legend.appendChild(li);
+    });
+  }
+
+  /* --- Table rendering & search --- */
+  const tbody = document.getElementById('campaignTbody');
+  const search = document.getElementById('tableSearch');
+  const resetBtn = document.getElementById('resetSearch');
+
+  function statusBadge(s) {
+    const st = s.toLowerCase();
+    if (st.includes('draft')) return '<span class="badge pending">Draft</span>';
+    if (st.includes('scheduled')) return '<span class="badge scheduled">Scheduled</span>';
+    if (st.includes('sent')) return '<span class="badge sent">Sent</span>';
+    if (st.includes('completed')) return '<span class="badge completed">Completed</span>';
+    return `<span class="badge">${s}</span>`;
+  }
+
+  function renderTable(rows) {
+    tbody.innerHTML = '';
+    rows.forEach((r, i) => {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `<td>${9995 + i}</td><td>${r.id}</td><td>${r.name}</td><td>${r.recipients.toLocaleString()}</td><td>${statusBadge(r.status)}</td><td>${r.open}</td>`;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function applySearch(q) {
+    const t = (q || '').trim().toLowerCase();
+    if (!t) return renderTable(campaigns);
+    const filtered = campaigns.filter(c => c.id.toLowerCase().includes(t) || c.name.toLowerCase().includes(t) || c.status.toLowerCase().includes(t));
+    renderTable(filtered);
+  }
+
+  if (search) search.addEventListener('input', e => applySearch(e.target.value));
+  if (resetBtn) resetBtn.addEventListener('click', () => { if (search) search.value = ''; applySearch(''); });
+
+  /* --- initialize everything --- */
+  function init() {
+    drawBarChart();
+    drawDonut();
+    renderTable(campaigns);
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
+
+  /* --- redraw on resize (debounced) --- */
+  let rt;
+  window.addEventListener('resize', () => {
+    clearTimeout(rt);
+    rt = setTimeout(() => { if (barChart) barChart.resize(); if (donutChart) donutChart.resize(); }, 160);
+  });
+
+  /* --- Expose update API (optional) --- */
+  window.updateDashboard = function({ newBarData, newDonutData, newCampaigns }) {
+    if (newBarData) { barData.length = 0; newBarData.forEach(x => barData.push(x)); drawBarChart(); }
+    if (newDonutData) { donutData.length = 0; newDonutData.forEach(x => donutData.push(x)); drawDonut(); }
+    if (newCampaigns) { campaigns.length = 0; newCampaigns.forEach(x => campaigns.push(x)); renderTable(campaigns); }
+  };
+
+})();
+
+  </script>
+ 
+
+   <footer class="site-footer">
+    <div class="footer-inner">
+
+      <!-- LEFT: About + newsletter -->
+      <div class="col about">
+        <h3>About</h3>
+        <p>
+          There are many variations of passages of Lorem Ip available,
+          but the majority have
+        </p>
+
+        <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <!-- <label class="sr-only" for="ft-email">Email Address</label> -->
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
+
+       <div class="ft-social">
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./Pages/error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
+      </div>
+
+  
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <span class="dot">🌐</span>
+            <div>
+              <div class="muted">stackly@gmail.com</div>
+              <div class="muted small">www.stackly.com</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <span class="dot">📍</span>
+            <div>
+              <div class="muted">Chinna Thiruppathi,Salem</div>
+              <div class="muted small">Tamil nadu,India</div>
+            </div>
+          </div>
+
+          <hr class="divider">
+
+          <div class="emergency">
+            <div class="phone-icon">📞</div>
+            <div class="emerg-text">
+              <div class="muted small">Emergency call</div>
+              <div class="phone-number">+91 78912 43598</div>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+         <!-- RIGHT: Explore links -->
+      <div class="col explore">
+        <h3>Quick Links</h3>
+        <ul class="links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./service.html">Service</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./dashboard.html">Dashboard</a></li>
+        </ul>
+      </div>
+      </div>
+
+     
+
+    </div>
+     <div class="ft-map" aria-hidden="false">
+        <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
+
+    <div class="footer-bottom">
+      <p>© All Copyright 2024 </p>
+    </div>
+  </footer>
+
+
+ 
+
+
+
+
+
+     <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>
