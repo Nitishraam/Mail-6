@@ -169,33 +169,29 @@
             <h2 data-aos="fade-up">Request a custom quote</h2>
             <p data-aos="fade-up" class="panel-sub">Tell us about your project and we'll get back within one business day.</p>
 
-            <form data-aos="zoom-out" class="contact-form" action="./error.html" method="post" onsubmit="return false;" aria-label="Contact form">
-              <div class="row">
-                <label class="sr-only" for="name">Your name</label>
-                <input id="name" name="name" type="text" placeholder="Your name" required>
-              </div>
+           <form data-aos="zoom-out" class="contact-form" action="./error.html" method="get">
+    <div class="field">
+        <label>Your Name</label>
+        <input type="text" required placeholder="Enter your name">
+    </div>
 
-              <div class="row">
-                <label class="sr-only" for="email">Work email</label>
-                <input id="email" name="email" type="email" placeholder="Work email" required>
-              </div>
+    <div class="field">
+        <label>Your Email</label>
+        <input type="email" required placeholder="Enter your email">
+    </div>
 
-              <div class="row">
-                <label class="sr-only" for="company">Company</label>
-                <input id="company" name="company" type="text" placeholder="Company (optional)">
-              </div>
+    <div class="field">
+        <label>Subject</label>
+        <input type="text" required placeholder="What is this about?">
+    </div>
 
-              <div class="row">
-                <label class="sr-only" for="message">Project details</label>
-                <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, approximate volume and timeline" required></textarea>
-              </div>
+    <div class="field">
+        <label>Message</label>
+        <textarea rows="4" required placeholder="Write your message here"></textarea>
+    </div>
 
-              <div class="row actions">
-                <button type="submit" class="btn-primary">Request quote</button>
-                
-              </div>
-\
-            </form>
+    <button class="contact-btn" type="submit">Send Message</button>
+</form>
           </div>
         </div>
 
